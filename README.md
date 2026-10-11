@@ -2,6 +2,11 @@
 
 **A local decision model as the router of a LangChain/LangGraph workflow, compared with a classic tool-calling agent.**
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/results_dark.png">
+  <img alt="Bar charts. Tool requests, median latency: clef-routed graph 0.27 s, tool-calling agent 7.20 s. Open-ended requests: 5.64 s vs 13.14 s. Correct runs out of 45: 45 vs 39." src="docs/results_light.png">
+</picture>
+
 Agentic workflows are flexible but slow, so many teams fall back to hand-written scripts with keyword rules. Those rules are brittle: "hisse" (stock) appears in both *"buy 100 lots of THY"* and *"what is a stock?"*. This repo measures a middle path:
 
 - **[Cloudflare/clef-flash](https://huggingface.co/Cloudflare/clef-flash)** (9B decision model) reads the request and returns calibrated probabilities for typed questions (intent, ticker) in a single forward pass. It generates no text.
