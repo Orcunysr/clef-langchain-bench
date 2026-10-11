@@ -1,0 +1,12 @@
+# GPU server side (tested on Windows 10, Python 3.12, CUDA 12.8 wheels).
+# Install torch/torchvision from the CUDA index first:
+#   pip install torch==2.11.0 torchvision==0.26.0 --index-url https://download.pytorch.org/whl/cu128
+transformers==5.10.2
+accelerate==1.15.0
+huggingface_hub
+safetensors
+numpy
+pillow
+av
+fastapi
+uvicorn

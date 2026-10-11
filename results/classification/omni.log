@@ -1,0 +1,68 @@
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'interleaved', 'mrope_section'}
+
+Some parameters are on the meta device because they were offloaded to the cpu.
+[loader] 0: 16 modules (e.g. ['thinker.audio_tower', 'thinker.visual', 'thinker.model.embed_tokens'])
+[loader] 1: 17 modules (e.g. ['thinker.model.layers.13', 'thinker.model.layers.14', 'thinker.model.layers.15'])
+[loader] cpu: 21 modules (e.g. ['thinker.model.layers.30', 'thinker.model.layers.31', 'thinker.model.layers.32'])
+[loader] lm_head was on meta; reloaded onto cuda:1
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'interleaved', 'mrope_section'}
+loaded in 71.1s
+  GPU0 alloc 17.9 GiB
+  GPU1 alloc 20.5 GiB
+
+== 1. Text: support message
+  (295 tokens, 8.4 s)
+   department {'billing': 0.2404, 'technical': 0.7596}
+   urgency {'0': 0.0465, '1': 0.0237, '2': 0.9298}
+   outage {'true': 0.9522, 'false': 0.0478}
+
+== 2. SystemOne: invoice question (billing, not urgent)
+{
+  "department": {
+    "type": "choice",
+    "choice": "billing",
+    "confidence": 0.9975,
+    "probabilities": {
+      "billing": 0.9975,
+      "technical": 0.0025
+    }
+  },
+  "urgency": {
+    "type": "score",
+    "score": 0.0163,
+    "confidence": 0.9874,
+    "legend": {
+      "0": "Can wait",
+      "1": "This week",
+      "2": "Today"
+    },
+    "probabilities": {
+      "0": 0.9874,
+      "1": 0.009,
+      "2": 0.0037
+    }
+  },
+  "outage": {
+    "type": "noul",
+    "noul": 0.0009
+  }
+}
+
+== 3. Image (synthetic red circle + blue square + text)
+  (430 tokens, 6.0 s)
+   circle_color {'blue': 0.0196, 'green': 0.0187, 'red': 0.9616}
+   has_square {'true': 0.9929, 'false': 0.0071}
+
+== 4. Audio: spoken support request (state has no text about the issue)
+  wav: support_16k.wav (8.7s @16kHz mono)
+  (416 tokens, 5.8 s)
+   department {'billing': 0.0102, 'technical': 0.9898}
+   urgency {'0': 0.0416, '1': 0.0345, '2': 0.924}
+   outage {'true': 0.99, 'false': 0.01}
+
+== 5. Audio: calm billing voicemail
+  wav: billing_16k.wav (9.7s @16kHz mono)
+  (429 tokens, 5.9 s)
+   department {'billing': 0.993, 'technical': 0.007}
+   urgency {'0': 0.6839, '1': 0.2941, '2': 0.022}
+   outage {'true': 0.0012, 'false': 0.9988}

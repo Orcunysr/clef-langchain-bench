@@ -1,0 +1,54 @@
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+
+loaded in 19.5s, GPU0 alloc 17.8 GiB
+
+== 1. Model card example (invoice)
+  (260 tokens, 828 ms)
+   status {'draft': 0.0094, 'overdue': 0.9731, 'paid': 0.0175}
+   large {'true': 0.9736, 'false': 0.0264}
+
+== 2. SystemOne support message (department / urgency / outage)
+{
+  "model": "clef-flash",
+  "answers": {
+    "department": {
+      "type": "choice",
+      "choice": "technical",
+      "confidence": 0.9598,
+      "probabilities": {
+        "billing": 0.0402,
+        "technical": 0.9598
+      }
+    },
+    "urgency": {
+      "type": "score",
+      "score": 1.7813,
+      "confidence": 0.8542,
+      "legend": {
+        "0": "Can wait",
+        "1": "This week",
+        "2": "Today"
+      },
+      "probabilities": {
+        "0": 0.0729,
+        "1": 0.0729,
+        "2": 0.8542
+      }
+    },
+    "outage": {
+      "type": "noul",
+      "noul": 0.8416
+    }
+  },
+  "usage": {
+    "input_tokens": 300,
+    "output_tokens": 0
+  }
+}
+
+== 3. Image example (synthetic: red circle + text on white)
+  (605 tokens, 484 ms)
+   shapes {'circle_and_square': 0.9725, 'only_circle': 0.0121, 'triangle': 0.0155}
+   circle_color {'blue': 0.0124, 'green': 0.014, 'red': 0.9737}
+   has_text {'true': 0.8918, 'false': 0.1082}
+   is_photo {'true': 0.0046, 'false': 0.9954}

@@ -1,0 +1,31 @@
+---
+config:
+  flowchart:
+    curve: linear
+---
+graph TD;
+	__start__([<p>__start__</p>]):::first
+	classify(classify)
+	price(price)
+	buy(buy)
+	sell(sell)
+	portfolio(portfolio)
+	ask_missing(ask_missing)
+	llm_fallback(llm_fallback)
+	__end__([<p>__end__</p>]):::last
+	__start__ --> classify;
+	classify -.-> ask_missing;
+	classify -.-> buy;
+	classify -.-> llm_fallback;
+	classify -.-> portfolio;
+	classify -.-> price;
+	classify -.-> sell;
+	ask_missing --> __end__;
+	buy --> __end__;
+	llm_fallback --> __end__;
+	portfolio --> __end__;
+	price --> __end__;
+	sell --> __end__;
+	classDef default fill:#f2f0ff,line-height:1.2
+	classDef first fill-opacity:0
+	classDef last fill:#bfb6fc

@@ -1,0 +1,74 @@
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+
+[flash-warmup] 01 support routing                     department   gold=billing         pred=billing         p_gold=0.974 OK 828ms
+[flash-warmup] 02 sentiment (sarcasm)                 sentiment    gold=negative        pred=negative        p_gold=0.963 OK 219ms
+[flash-warmup] 02 sentiment (sarcasm)                 sarcastic    gold=true            pred=false           p_gold=0.452 XX 219ms
+[flash-warmup] 03 phishing email                      label        gold=phishing        pred=phishing        p_gold=0.923 OK 234ms
+[flash-warmup] 04 legit email (false-positive check)  label        gold=legitimate      pred=legitimate      p_gold=0.627 OK 219ms
+[flash-warmup] 05 Turkish complaint                   topic        gold=shipping        pred=shipping        p_gold=0.877 OK 234ms
+[flash-warmup] 05 Turkish complaint                   wants_refund gold=true            pred=true            p_gold=0.975 OK 234ms
+[flash-warmup] 05 Turkish complaint                   urgency      gold=2               pred=2               p_gold=0.877 OK 234ms
+[flash-warmup] 06 news topic                          topic        gold=economy         pred=economy         p_gold=0.979 OK 234ms
+[flash-warmup] 07 intent (banking77-like)             intent       gold=card_swallowed  pred=card_swallowed  p_gold=0.994 OK 234ms
+[flash-warmup] 08 toxicity                            toxic        gold=true            pred=true            p_gold=0.981 OK 219ms
+[flash-warmup] 08 toxicity                            severity     gold=2               pred=2               p_gold=0.300 OK 219ms
+[flash-warmup] 09 NLI                                 relation     gold=contradiction   pred=contradiction   p_gold=0.937 OK 219ms
+[flash-warmup] 10 log severity                        severity     gold=critical        pred=critical        p_gold=0.970 OK 234ms
+[flash-warmup] 10 log severity                        component    gold=database        pred=database        p_gold=0.960 OK 234ms
+[flash] 01 support routing                     department   gold=billing         pred=billing         p_gold=0.974 OK 219ms
+[flash] 02 sentiment (sarcasm)                 sentiment    gold=negative        pred=negative        p_gold=0.963 OK 234ms
+[flash] 02 sentiment (sarcasm)                 sarcastic    gold=true            pred=false           p_gold=0.452 XX 234ms
+[flash] 03 phishing email                      label        gold=phishing        pred=phishing        p_gold=0.923 OK 219ms
+[flash] 04 legit email (false-positive check)  label        gold=legitimate      pred=legitimate      p_gold=0.627 OK 234ms
+[flash] 05 Turkish complaint                   topic        gold=shipping        pred=shipping        p_gold=0.877 OK 250ms
+[flash] 05 Turkish complaint                   wants_refund gold=true            pred=true            p_gold=0.975 OK 250ms
+[flash] 05 Turkish complaint                   urgency      gold=2               pred=2               p_gold=0.877 OK 250ms
+[flash] 06 news topic                          topic        gold=economy         pred=economy         p_gold=0.979 OK 219ms
+[flash] 07 intent (banking77-like)             intent       gold=card_swallowed  pred=card_swallowed  p_gold=0.994 OK 234ms
+[flash] 08 toxicity                            toxic        gold=true            pred=true            p_gold=0.981 OK 219ms
+[flash] 08 toxicity                            severity     gold=2               pred=2               p_gold=0.300 OK 219ms
+[flash] 09 NLI                                 relation     gold=contradiction   pred=contradiction   p_gold=0.937 OK 203ms
+[flash] 10 log severity                        severity     gold=critical        pred=critical        p_gold=0.970 OK 234ms
+[flash] 10 log severity                        component    gold=database        pred=database        p_gold=0.960 OK 234ms
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'interleaved', 'mrope_section'}
+
+Some parameters are on the meta device because they were offloaded to the cpu.
+[loader] 0: 16 modules (e.g. ['thinker.audio_tower', 'thinker.visual', 'thinker.model.embed_tokens'])
+[loader] 1: 17 modules (e.g. ['thinker.model.layers.13', 'thinker.model.layers.14', 'thinker.model.layers.15'])
+[loader] cpu: 21 modules (e.g. ['thinker.model.layers.30', 'thinker.model.layers.31', 'thinker.model.layers.32'])
+[loader] lm_head was on meta; reloaded onto cuda:1
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'interleaved', 'mrope_section'}
+[omni-warmup] 01 support routing                     department   gold=billing         pred=billing         p_gold=0.987 OK 8525ms
+[omni-warmup] 02 sentiment (sarcasm)                 sentiment    gold=negative        pred=negative        p_gold=0.945 OK 5668ms
+[omni-warmup] 02 sentiment (sarcasm)                 sarcastic    gold=true            pred=true            p_gold=0.861 OK 5668ms
+[omni-warmup] 03 phishing email                      label        gold=phishing        pred=phishing        p_gold=0.918 OK 5592ms
+[omni-warmup] 04 legit email (false-positive check)  label        gold=legitimate      pred=legitimate      p_gold=0.907 OK 5967ms
+[omni-warmup] 05 Turkish complaint                   topic        gold=shipping        pred=shipping        p_gold=0.980 OK 5920ms
+[omni-warmup] 05 Turkish complaint                   wants_refund gold=true            pred=true            p_gold=0.967 OK 5920ms
+[omni-warmup] 05 Turkish complaint                   urgency      gold=2               pred=2               p_gold=0.934 OK 5920ms
+[omni-warmup] 06 news topic                          topic        gold=economy         pred=economy         p_gold=0.936 OK 5477ms
+[omni-warmup] 07 intent (banking77-like)             intent       gold=card_swallowed  pred=card_swallowed  p_gold=0.914 OK 5649ms
+[omni-warmup] 08 toxicity                            toxic        gold=true            pred=true            p_gold=0.989 OK 6056ms
+[omni-warmup] 08 toxicity                            severity     gold=2               pred=2               p_gold=0.756 OK 6056ms
+[omni-warmup] 09 NLI                                 relation     gold=contradiction   pred=contradiction   p_gold=0.934 OK 5727ms
+[omni-warmup] 10 log severity                        severity     gold=critical        pred=critical        p_gold=0.973 OK 5541ms
+[omni-warmup] 10 log severity                        component    gold=database        pred=database        p_gold=0.921 OK 5541ms
+[omni] 01 support routing                     department   gold=billing         pred=billing         p_gold=0.987 OK 5794ms
+[omni] 02 sentiment (sarcasm)                 sentiment    gold=negative        pred=negative        p_gold=0.945 OK 5920ms
+[omni] 02 sentiment (sarcasm)                 sarcastic    gold=true            pred=true            p_gold=0.861 OK 5920ms
+[omni] 03 phishing email                      label        gold=phishing        pred=phishing        p_gold=0.918 OK 5618ms
+[omni] 04 legit email (false-positive check)  label        gold=legitimate      pred=legitimate      p_gold=0.907 OK 5649ms
+[omni] 05 Turkish complaint                   topic        gold=shipping        pred=shipping        p_gold=0.980 OK 6076ms
+[omni] 05 Turkish complaint                   wants_refund gold=true            pred=true            p_gold=0.967 OK 6076ms
+[omni] 05 Turkish complaint                   urgency      gold=2               pred=2               p_gold=0.934 OK 6076ms
+[omni] 06 news topic                          topic        gold=economy         pred=economy         p_gold=0.936 OK 5742ms
+[omni] 07 intent (banking77-like)             intent       gold=card_swallowed  pred=card_swallowed  p_gold=0.914 OK 5551ms
+[omni] 08 toxicity                            toxic        gold=true            pred=true            p_gold=0.989 OK 5830ms
+[omni] 08 toxicity                            severity     gold=2               pred=2               p_gold=0.756 OK 5830ms
+[omni] 09 NLI                                 relation     gold=contradiction   pred=contradiction   p_gold=0.934 OK 5961ms
+[omni] 10 log severity                        severity     gold=critical        pred=critical        p_gold=0.973 OK 5572ms
+[omni] 10 log severity                        component    gold=database        pred=database        p_gold=0.921 OK 5572ms
+
+=== SUMMARY ===
+flash: accuracy 93.3% (14/15), mean p_gold 0.853, mean latency 226 ms/case (min 203, max 250), load 20 s
+omni: accuracy 100.0% (15/15), mean p_gold 0.928, mean latency 5771 ms/case (min 5551, max 6076), load 67 s

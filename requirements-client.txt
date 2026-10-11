@@ -1,0 +1,6 @@
+# Client side (any OS, Python >= 3.10). Versions used for the published results.
+langchain==1.4.4
+langgraph==1.2.14
+langchain-core==1.6.9
+langchain-openai==1.7.0
+langchain-typesafe[experimental]==0.0.1a3

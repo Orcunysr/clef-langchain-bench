@@ -1,0 +1,34 @@
+[clef ] 3/3 ok    0.26s  THYAO ne kadar?                                      calls=[('get_price', {'ticker': 'THYAO'})] intent=price(0.98) ticker=THYAO
+[clef ] 3/3 ok    0.29s  Aselsan hissesinin fiyatı nedir?                     calls=[('get_price', {'ticker': 'ASELS'})] intent=price(0.99) ticker=ASELS
+[clef ] 3/3 ok    0.27s  Koç Holding şu an kaç lira?                          calls=[('get_price', {'ticker': 'KCHOL'})] intent=price(0.99) ticker=KCHOL
+[clef ] 3/3 ok    0.26s  Türk Hava Yollarından 100 lot al                     calls=[('buy_stock', {'ticker': 'THYAO', 'quantity': 100})] intent=buy(0.94) ticker=THYAO
+[clef ] 3/3 ok    0.27s  Garanti'den 50 adet satın al                         calls=[('buy_stock', {'ticker': 'GARAN', 'quantity': 50})] intent=buy(0.96) ticker=GARAN
+[clef ] 3/3 ok    0.26s  BIMAS 5 lot alım emri ver                            calls=[('buy_stock', {'ticker': 'BIMAS', 'quantity': 5})] intent=buy(0.96) ticker=BIMAS
+[clef ] 3/3 ok    0.26s  Elimdeki BİM hisselerinden 20 tanesini sat           calls=[('sell_stock', {'ticker': 'BIMAS', 'quantity': 20})] intent=sell(0.99) ticker=BIMAS
+[clef ] 3/3 ok    0.26s  Tüpraş'tan 10 lot satmak istiyorum                   calls=[('sell_stock', {'ticker': 'TUPRS', 'quantity': 10})] intent=sell(0.96) ticker=TUPRS
+[clef ] 3/3 ok    0.27s  Portföyümde neler var?                               calls=[('get_portfolio', {})] intent=portfolio(0.99) ticker=none
+[clef ] 3/3 ok    0.38s  Hesabımdaki hisseleri göster                         calls=[('get_portfolio', {})] intent=portfolio(1.00) ticker=none
+[clef ] 3/3 ok    0.38s  Garanti hisselerimi satmayacağım, sadece fiyatına ba calls=[('get_price', {'ticker': 'GARAN'})] intent=price(0.92) ticker=GARAN
+[clef ] 3/3 ok    6.77s  Hisse senedi nedir, nasıl çalışır?                   calls=[] intent=other(0.97) ticker=none
+[clef ] 3/3 ok    4.00s  Aselsan alınır mı sence?                             calls=[] intent=other(0.76) ticker=ASELS
+[clef ] 3/3 ok    6.47s  Temettü verimi yüksek şirketlerle uzun vadeli bir st calls=[] intent=other(0.97) ticker=none
+[clef ] 3/3 ok    4.81s  Merhaba, nasılsın?                                   calls=[] intent=other(0.99) ticker=none
+[agent] 3/3 ok    5.55s  THYAO ne kadar?                                      calls=[('get_price', {'ticker': 'THYAO'})] 
+[agent] 3/3 ok    6.09s  Aselsan hissesinin fiyatı nedir?                     calls=[('get_price', {'ticker': 'ASELS'})] 
+[agent] 0/3 ok    2.54s  Koç Holding şu an kaç lira?                          calls=[] 
+[agent] 3/3 ok    7.27s  Türk Hava Yollarından 100 lot al                     calls=[('buy_stock', {'ticker': 'THYAO', 'quantity': 100})] 
+[agent] 3/3 ok    7.44s  Garanti'den 50 adet satın al                         calls=[('buy_stock', {'ticker': 'GARAN', 'quantity': 50})] 
+[agent] 3/3 ok    6.86s  BIMAS 5 lot alım emri ver                            calls=[('buy_stock', {'ticker': 'BIMAS', 'quantity': 5})] 
+[agent] 3/3 ok    7.46s  Elimdeki BİM hisselerinden 20 tanesini sat           calls=[('sell_stock', {'ticker': 'BIMAS', 'quantity': 20})] 
+[agent] 3/3 ok    7.46s  Tüpraş'tan 10 lot satmak istiyorum                   calls=[('sell_stock', {'ticker': 'TUPRS', 'quantity': 10})] 
+[agent] 3/3 ok    8.71s  Portföyümde neler var?                               calls=[('get_portfolio', {})] 
+[agent] 3/3 ok    7.20s  Hesabımdaki hisseleri göster                         calls=[('get_portfolio', {})] 
+[agent] 0/3 ok    3.04s  Garanti hisselerimi satmayacağım, sadece fiyatına ba calls=[] 
+[agent] 3/3 ok   22.33s  Hisse senedi nedir, nasıl çalışır?                   calls=[] 
+[agent] 3/3 ok    3.96s  Aselsan alınır mı sence?                             calls=[] 
+[agent] 3/3 ok   25.50s  Temettü verimi yüksek şirketlerle uzun vadeli bir st calls=[] 
+[agent] 3/3 ok    2.84s  Merhaba, nasılsın?                                   calls=[] 
+
+=== SUMMARY ===
+clef {'correct': '45/45', 'tool_median_s': 0.27, 'tool_mean_s': 0.29, 'open_median_s': 5.64, 'all_median_s': 0.27, 'total_s': 25.2}
+agent {'correct': '39/45', 'tool_median_s': 7.2, 'tool_mean_s': 6.33, 'open_median_s': 13.14, 'all_median_s': 7.2, 'total_s': 124.2}

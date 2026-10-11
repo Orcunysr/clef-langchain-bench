@@ -1,0 +1,60 @@
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+
+loaded in 14.3s, GPU0 17.5 GiB
+[transformers] Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+[transformers] Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+[no-think] 01 support routing                     department   gold=billing         pred=billing         OK 0.66s 9tok (13.7 tok/s)
+[transformers] Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+[no-think] 02 sentiment (sarcasm)                 sentiment    gold=negative        pred=negative        OK 1.28s 18tok (14.0 tok/s)
+[no-think] 02 sentiment (sarcasm)                 sarcastic    gold=true            pred=true            OK 1.28s 18tok (14.0 tok/s)
+[transformers] Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+[no-think] 03 phishing email                      label        gold=phishing        pred=phishing        OK 0.78s 10tok (12.8 tok/s)
+[transformers] Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+[no-think] 04 legit email (false-positive check)  label        gold=legitimate      pred=legitimate      OK 0.78s 10tok (12.8 tok/s)
+[transformers] Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+[no-think] 05 Turkish complaint                   topic        gold=shipping        pred=shipping        OK 1.69s 25tok (14.8 tok/s)
+[no-think] 05 Turkish complaint                   wants_refund gold=true            pred=true            OK 1.69s 25tok (14.8 tok/s)
+[no-think] 05 Turkish complaint                   urgency      gold=2               pred=2               OK 1.69s 25tok (14.8 tok/s)
+[transformers] Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+[no-think] 06 news topic                          topic        gold=economy         pred=economy         OK 0.80s 10tok (12.5 tok/s)
+[transformers] Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+[no-think] 07 intent (banking77-like)             intent       gold=card_swallowed  pred=card_swallowed  OK 1.02s 11tok (10.8 tok/s)
+[transformers] Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+[no-think] 08 toxicity                            toxic        gold=true            pred=true            OK 1.36s 16tok (11.8 tok/s)
+[no-think] 08 toxicity                            severity     gold=2               pred=2               OK 1.36s 16tok (11.8 tok/s)
+[transformers] Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+[no-think] 09 NLI                                 relation     gold=contradiction   pred=contradiction   OK 1.02s 11tok (10.8 tok/s)
+[transformers] Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+[no-think] 10 log severity                        severity     gold=critical        pred=critical        OK 1.30s 15tok (11.6 tok/s)
+[no-think] 10 log severity                        component    gold=database        pred=database        OK 1.30s 15tok (11.6 tok/s)
+[transformers] Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+[think] 01 support routing                     department   gold=billing         pred=billing         OK 25.93s 439tok (16.9 tok/s)
+[transformers] Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+[think] 02 sentiment (sarcasm)                 sentiment    gold=negative        pred=negative        OK 24.00s 420tok (17.5 tok/s)
+[think] 02 sentiment (sarcasm)                 sarcastic    gold=true            pred=true            OK 24.00s 420tok (17.5 tok/s)
+[transformers] Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+[think] 03 phishing email                      label        gold=phishing        pred=phishing        OK 34.15s 589tok (17.2 tok/s)
+[transformers] Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+[think] 04 legit email (false-positive check)  label        gold=legitimate      pred=legitimate      OK 31.40s 534tok (17.0 tok/s)
+[transformers] Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+[think] 05 Turkish complaint                   topic        gold=shipping        pred=None            XX 236.29s 4096tok (17.3 tok/s)
+[think] 05 Turkish complaint                   wants_refund gold=true            pred=None            XX 236.29s 4096tok (17.3 tok/s)
+[think] 05 Turkish complaint                   urgency      gold=2               pred=None            XX 236.29s 4096tok (17.3 tok/s)
+   !! unparsable output: 'o match the list definitions `[\'true\', \'false\']` and `[\'0\', \'1\', \'2\']`.\n\n    *   Wait, I\'ll check if I can just use `true` and `2`.\n    *   If I use `true`, it matches the semantic meaning of the list item `true`.\n    *   If I use `"true"`, it matches the literal string in the list.\n    *   I\'ll use'
+[transformers] Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+[think] 06 news topic                          topic        gold=economy         pred=economy         OK 22.71s 390tok (17.2 tok/s)
+[transformers] Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+[think] 07 intent (banking77-like)             intent       gold=card_swallowed  pred=card_swallowed  OK 44.96s 798tok (17.7 tok/s)
+[transformers] Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+[think] 08 toxicity                            toxic        gold=true            pred=None            XX 241.62s 4096tok (17.0 tok/s)
+[think] 08 toxicity                            severity     gold=2               pred=None            XX 241.62s 4096tok (17.0 tok/s)
+   !! unparsable output: 'Okay, I will use strings for severity to be safe. `{"toxic": true, "severity": "2"}`? No, consistency.\n    I will use `{"toxic": "true", "severity": "2"}`.\n    Actually, I\'ll check similar tasks. Usually, `toxic` is boolean. `severity` is integer.\n    I will output `{"toxic": true, "severity": 2}`.\n'
+[transformers] Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+[think] 09 NLI                                 relation     gold=contradiction   pred=contradiction   OK 28.46s 504tok (17.7 tok/s)
+[transformers] Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+[think] 10 log severity                        severity     gold=critical        pred=critical        OK 39.02s 659tok (16.9 tok/s)
+[think] 10 log severity                        component    gold=database        pred=database        OK 39.02s 659tok (16.9 tok/s)
+
+=== SUMMARY ===
+qwen3.5-9b no-think: accuracy 15/15, mean 1.07 s/case (min 0.66, max 1.69), mean 14 new tokens, 12.6 tok/s, load 14 s
+qwen3.5-9b think: accuracy 25/30, mean 72.85 s/case (min 22.71, max 241.62), mean 1252 new tokens, 17.2 tok/s, load 14 s

@@ -1,0 +1,1490 @@
+{
+ "summary": {
+  "clef": {
+   "correct": "45/45",
+   "tool_median_s": 0.27,
+   "tool_mean_s": 0.29,
+   "open_median_s": 5.64,
+   "all_median_s": 0.27,
+   "total_s": 25.2
+  },
+  "agent": {
+   "correct": "39/45",
+   "tool_median_s": 7.2,
+   "tool_mean_s": 6.33,
+   "open_median_s": 13.14,
+   "all_median_s": 7.2,
+   "total_s": 124.2
+  }
+ },
+ "results": [
+  {
+   "approach": "clef",
+   "request": "THYAO ne kadar?",
+   "gold": [
+    "get_price",
+    {
+     "ticker": "THYAO"
+    }
+   ],
+   "correct_runs": 3,
+   "repeats": 3,
+   "median_s": 0.263,
+   "runs": [
+    {
+     "seconds": 0.263,
+     "calls": [
+      [
+       "get_price",
+       {
+        "ticker": "THYAO"
+       }
+      ]
+     ],
+     "ok": true,
+     "reply": "THYAO (Türk Hava Yolları): 312.5 TL",
+     "detail": "intent=price(0.98) ticker=THYAO"
+    },
+    {
+     "seconds": 0.263,
+     "calls": [
+      [
+       "get_price",
+       {
+        "ticker": "THYAO"
+       }
+      ]
+     ],
+     "ok": true,
+     "reply": "THYAO (Türk Hava Yolları): 312.5 TL",
+     "detail": "intent=price(0.98) ticker=THYAO"
+    },
+    {
+     "seconds": 0.264,
+     "calls": [
+      [
+       "get_price",
+       {
+        "ticker": "THYAO"
+       }
+      ]
+     ],
+     "ok": true,
+     "reply": "THYAO (Türk Hava Yolları): 312.5 TL",
+     "detail": "intent=price(0.98) ticker=THYAO"
+    }
+   ]
+  },
+  {
+   "approach": "clef",
+   "request": "Aselsan hissesinin fiyatı nedir?",
+   "gold": [
+    "get_price",
+    {
+     "ticker": "ASELS"
+    }
+   ],
+   "correct_runs": 3,
+   "repeats": 3,
+   "median_s": 0.289,
+   "runs": [
+    {
+     "seconds": 0.306,
+     "calls": [
+      [
+       "get_price",
+       {
+        "ticker": "ASELS"
+       }
+      ]
+     ],
+     "ok": true,
+     "reply": "ASELS (Aselsan): 148.2 TL",
+     "detail": "intent=price(0.99) ticker=ASELS"
+    },
+    {
+     "seconds": 0.289,
+     "calls": [
+      [
+       "get_price",
+       {
+        "ticker": "ASELS"
+       }
+      ]
+     ],
+     "ok": true,
+     "reply": "ASELS (Aselsan): 148.2 TL",
+     "detail": "intent=price(0.99) ticker=ASELS"
+    },
+    {
+     "seconds": 0.265,
+     "calls": [
+      [
+       "get_price",
+       {
+        "ticker": "ASELS"
+       }
+      ]
+     ],
+     "ok": true,
+     "reply": "ASELS (Aselsan): 148.2 TL",
+     "detail": "intent=price(0.99) ticker=ASELS"
+    }
+   ]
+  },
+  {
+   "approach": "clef",
+   "request": "Koç Holding şu an kaç lira?",
+   "gold": [
+    "get_price",
+    {
+     "ticker": "KCHOL"
+    }
+   ],
+   "correct_runs": 3,
+   "repeats": 3,
+   "median_s": 0.265,
+   "runs": [
+    {
+     "seconds": 0.268,
+     "calls": [
+      [
+       "get_price",
+       {
+        "ticker": "KCHOL"
+       }
+      ]
+     ],
+     "ok": true,
+     "reply": "KCHOL (Koç Holding): 198.75 TL",
+     "detail": "intent=price(0.99) ticker=KCHOL"
+    },
+    {
+     "seconds": 0.265,
+     "calls": [
+      [
+       "get_price",
+       {
+        "ticker": "KCHOL"
+       }
+      ]
+     ],
+     "ok": true,
+     "reply": "KCHOL (Koç Holding): 198.75 TL",
+     "detail": "intent=price(0.99) ticker=KCHOL"
+    },
+    {
+     "seconds": 0.263,
+     "calls": [
+      [
+       "get_price",
+       {
+        "ticker": "KCHOL"
+       }
+      ]
+     ],
+     "ok": true,
+     "reply": "KCHOL (Koç Holding): 198.75 TL",
+     "detail": "intent=price(0.99) ticker=KCHOL"
+    }
+   ]
+  },
+  {
+   "approach": "clef",
+   "request": "Türk Hava Yollarından 100 lot al",
+   "gold": [
+    "buy_stock",
+    {
+     "ticker": "THYAO",
+     "quantity": 100
+    }
+   ],
+   "correct_runs": 3,
+   "repeats": 3,
+   "median_s": 0.264,
+   "runs": [
+    {
+     "seconds": 0.261,
+     "calls": [
+      [
+       "buy_stock",
+       {
+        "ticker": "THYAO",
+        "quantity": 100
+       }
+      ]
+     ],
+     "ok": true,
+     "reply": "Alım emri iletildi: 100 lot THYAO",
+     "detail": "intent=buy(0.94) ticker=THYAO"
+    },
+    {
+     "seconds": 0.264,
+     "calls": [
+      [
+       "buy_stock",
+       {
+        "ticker": "THYAO",
+        "quantity": 100
+       }
+      ]
+     ],
+     "ok": true,
+     "reply": "Alım emri iletildi: 100 lot THYAO",
+     "detail": "intent=buy(0.94) ticker=THYAO"
+    },
+    {
+     "seconds": 0.264,
+     "calls": [
+      [
+       "buy_stock",
+       {
+        "ticker": "THYAO",
+        "quantity": 100
+       }
+      ]
+     ],
+     "ok": true,
+     "reply": "Alım emri iletildi: 100 lot THYAO",
+     "detail": "intent=buy(0.94) ticker=THYAO"
+    }
+   ]
+  },
+  {
+   "approach": "clef",
+   "request": "Garanti'den 50 adet satın al",
+   "gold": [
+    "buy_stock",
+    {
+     "ticker": "GARAN",
+     "quantity": 50
+    }
+   ],
+   "correct_runs": 3,
+   "repeats": 3,
+   "median_s": 0.271,
+   "runs": [
+    {
+     "seconds": 0.271,
+     "calls": [
+      [
+       "buy_stock",
+       {
+        "ticker": "GARAN",
+        "quantity": 50
+       }
+      ]
+     ],
+     "ok": true,
+     "reply": "Alım emri iletildi: 50 lot GARAN",
+     "detail": "intent=buy(0.96) ticker=GARAN"
+    },
+    {
+     "seconds": 0.266,
+     "calls": [
+      [
+       "buy_stock",
+       {
+        "ticker": "GARAN",
+        "quantity": 50
+       }
+      ]
+     ],
+     "ok": true,
+     "reply": "Alım emri iletildi: 50 lot GARAN",
+     "detail": "intent=buy(0.96) ticker=GARAN"
+    },
+    {
+     "seconds": 0.282,
+     "calls": [
+      [
+       "buy_stock",
+       {
+        "ticker": "GARAN",
+        "quantity": 50
+       }
+      ]
+     ],
+     "ok": true,
+     "reply": "Alım emri iletildi: 50 lot GARAN",
+     "detail": "intent=buy(0.96) ticker=GARAN"
+    }
+   ]
+  },
+  {
+   "approach": "clef",
+   "request": "BIMAS 5 lot alım emri ver",
+   "gold": [
+    "buy_stock",
+    {
+     "ticker": "BIMAS",
+     "quantity": 5
+    }
+   ],
+   "correct_runs": 3,
+   "repeats": 3,
+   "median_s": 0.262,
+   "runs": [
+    {
+     "seconds": 0.262,
+     "calls": [
+      [
+       "buy_stock",
+       {
+        "ticker": "BIMAS",
+        "quantity": 5
+       }
+      ]
+     ],
+     "ok": true,
+     "reply": "Alım emri iletildi: 5 lot BIMAS",
+     "detail": "intent=buy(0.96) ticker=BIMAS"
+    },
+    {
+     "seconds": 0.261,
+     "calls": [
+      [
+       "buy_stock",
+       {
+        "ticker": "BIMAS",
+        "quantity": 5
+       }
+      ]
+     ],
+     "ok": true,
+     "reply": "Alım emri iletildi: 5 lot BIMAS",
+     "detail": "intent=buy(0.96) ticker=BIMAS"
+    },
+    {
+     "seconds": 0.264,
+     "calls": [
+      [
+       "buy_stock",
+       {
+        "ticker": "BIMAS",
+        "quantity": 5
+       }
+      ]
+     ],
+     "ok": true,
+     "reply": "Alım emri iletildi: 5 lot BIMAS",
+     "detail": "intent=buy(0.96) ticker=BIMAS"
+    }
+   ]
+  },
+  {
+   "approach": "clef",
+   "request": "Elimdeki BİM hisselerinden 20 tanesini sat",
+   "gold": [
+    "sell_stock",
+    {
+     "ticker": "BIMAS",
+     "quantity": 20
+    }
+   ],
+   "correct_runs": 3,
+   "repeats": 3,
+   "median_s": 0.263,
+   "runs": [
+    {
+     "seconds": 0.263,
+     "calls": [
+      [
+       "sell_stock",
+       {
+        "ticker": "BIMAS",
+        "quantity": 20
+       }
+      ]
+     ],
+     "ok": true,
+     "reply": "Satış emri iletildi: 20 lot BIMAS",
+     "detail": "intent=sell(0.99) ticker=BIMAS"
+    },
+    {
+     "seconds": 0.263,
+     "calls": [
+      [
+       "sell_stock",
+       {
+        "ticker": "BIMAS",
+        "quantity": 20
+       }
+      ]
+     ],
+     "ok": true,
+     "reply": "Satış emri iletildi: 20 lot BIMAS",
+     "detail": "intent=sell(0.99) ticker=BIMAS"
+    },
+    {
+     "seconds": 0.262,
+     "calls": [
+      [
+       "sell_stock",
+       {
+        "ticker": "BIMAS",
+        "quantity": 20
+       }
+      ]
+     ],
+     "ok": true,
+     "reply": "Satış emri iletildi: 20 lot BIMAS",
+     "detail": "intent=sell(0.99) ticker=BIMAS"
+    }
+   ]
+  },
+  {
+   "approach": "clef",
+   "request": "Tüpraş'tan 10 lot satmak istiyorum",
+   "gold": [
+    "sell_stock",
+    {
+     "ticker": "TUPRS",
+     "quantity": 10
+    }
+   ],
+   "correct_runs": 3,
+   "repeats": 3,
+   "median_s": 0.264,
+   "runs": [
+    {
+     "seconds": 0.264,
+     "calls": [
+      [
+       "sell_stock",
+       {
+        "ticker": "TUPRS",
+        "quantity": 10
+       }
+      ]
+     ],
+     "ok": true,
+     "reply": "Satış emri iletildi: 10 lot TUPRS",
+     "detail": "intent=sell(0.96) ticker=TUPRS"
+    },
+    {
+     "seconds": 0.261,
+     "calls": [
+      [
+       "sell_stock",
+       {
+        "ticker": "TUPRS",
+        "quantity": 10
+       }
+      ]
+     ],
+     "ok": true,
+     "reply": "Satış emri iletildi: 10 lot TUPRS",
+     "detail": "intent=sell(0.96) ticker=TUPRS"
+    },
+    {
+     "seconds": 0.265,
+     "calls": [
+      [
+       "sell_stock",
+       {
+        "ticker": "TUPRS",
+        "quantity": 10
+       }
+      ]
+     ],
+     "ok": true,
+     "reply": "Satış emri iletildi: 10 lot TUPRS",
+     "detail": "intent=sell(0.96) ticker=TUPRS"
+    }
+   ]
+  },
+  {
+   "approach": "clef",
+   "request": "Portföyümde neler var?",
+   "gold": [
+    "get_portfolio",
+    {}
+   ],
+   "correct_runs": 3,
+   "repeats": 3,
+   "median_s": 0.267,
+   "runs": [
+    {
+     "seconds": 0.267,
+     "calls": [
+      [
+       "get_portfolio",
+       {}
+      ]
+     ],
+     "ok": true,
+     "reply": "Portföyünüz: THYAO 200 lot, BIMAS 40 lot, TUPRS 25 lot, GARAN 300 lot",
+     "detail": "intent=portfolio(0.99) ticker=none"
+    },
+    {
+     "seconds": 0.266,
+     "calls": [
+      [
+       "get_portfolio",
+       {}
+      ]
+     ],
+     "ok": true,
+     "reply": "Portföyünüz: THYAO 200 lot, BIMAS 40 lot, TUPRS 25 lot, GARAN 300 lot",
+     "detail": "intent=portfolio(0.99) ticker=none"
+    },
+    {
+     "seconds": 0.394,
+     "calls": [
+      [
+       "get_portfolio",
+       {}
+      ]
+     ],
+     "ok": true,
+     "reply": "Portföyünüz: THYAO 200 lot, BIMAS 40 lot, TUPRS 25 lot, GARAN 300 lot",
+     "detail": "intent=portfolio(0.99) ticker=none"
+    }
+   ]
+  },
+  {
+   "approach": "clef",
+   "request": "Hesabımdaki hisseleri göster",
+   "gold": [
+    "get_portfolio",
+    {}
+   ],
+   "correct_runs": 3,
+   "repeats": 3,
+   "median_s": 0.379,
+   "runs": [
+    {
+     "seconds": 0.377,
+     "calls": [
+      [
+       "get_portfolio",
+       {}
+      ]
+     ],
+     "ok": true,
+     "reply": "Portföyünüz: THYAO 200 lot, BIMAS 40 lot, TUPRS 25 lot, GARAN 300 lot",
+     "detail": "intent=portfolio(1.00) ticker=none"
+    },
+    {
+     "seconds": 0.379,
+     "calls": [
+      [
+       "get_portfolio",
+       {}
+      ]
+     ],
+     "ok": true,
+     "reply": "Portföyünüz: THYAO 200 lot, BIMAS 40 lot, TUPRS 25 lot, GARAN 300 lot",
+     "detail": "intent=portfolio(1.00) ticker=none"
+    },
+    {
+     "seconds": 0.38,
+     "calls": [
+      [
+       "get_portfolio",
+       {}
+      ]
+     ],
+     "ok": true,
+     "reply": "Portföyünüz: THYAO 200 lot, BIMAS 40 lot, TUPRS 25 lot, GARAN 300 lot",
+     "detail": "intent=portfolio(1.00) ticker=none"
+    }
+   ]
+  },
+  {
+   "approach": "clef",
+   "request": "Garanti hisselerimi satmayacağım, sadece fiyatına bakacaktım",
+   "gold": [
+    "get_price",
+    {
+     "ticker": "GARAN"
+    }
+   ],
+   "correct_runs": 3,
+   "repeats": 3,
+   "median_s": 0.378,
+   "runs": [
+    {
+     "seconds": 0.38,
+     "calls": [
+      [
+       "get_price",
+       {
+        "ticker": "GARAN"
+       }
+      ]
+     ],
+     "ok": true,
+     "reply": "GARAN (Garanti BBVA): 131.9 TL",
+     "detail": "intent=price(0.92) ticker=GARAN"
+    },
+    {
+     "seconds": 0.375,
+     "calls": [
+      [
+       "get_price",
+       {
+        "ticker": "GARAN"
+       }
+      ]
+     ],
+     "ok": true,
+     "reply": "GARAN (Garanti BBVA): 131.9 TL",
+     "detail": "intent=price(0.92) ticker=GARAN"
+    },
+    {
+     "seconds": 0.378,
+     "calls": [
+      [
+       "get_price",
+       {
+        "ticker": "GARAN"
+       }
+      ]
+     ],
+     "ok": true,
+     "reply": "GARAN (Garanti BBVA): 131.9 TL",
+     "detail": "intent=price(0.92) ticker=GARAN"
+    }
+   ]
+  },
+  {
+   "approach": "clef",
+   "request": "Hisse senedi nedir, nasıl çalışır?",
+   "gold": null,
+   "correct_runs": 3,
+   "repeats": 3,
+   "median_s": 6.774,
+   "runs": [
+    {
+     "seconds": 7.356,
+     "calls": [],
+     "ok": true,
+     "reply": "Hisse senedi, bir şirketin sahiplik payıdır. Bir hisse alarak, o şirketin küçük bir kısmına sahip olursunuz; şirket kâr ederse bu paydan kar payı (temettü) alabilir veya hisse fiyatı arttıkça değer kazanabilirsiniz.",
+     "detail": "intent=other(0.97) ticker=none"
+    },
+    {
+     "seconds": 6.774,
+     "calls": [],
+     "ok": true,
+     "reply": "Hisse senedi, bir şirketin sahiplik payıdır. Bir hisse alarak, o şirketin küçük bir kısmına sahip olursunuz; şirket kâr ederse bu paydan kar payı (temettü) alabilir veya hisse fiyatı arttıkça değer kazanabilirsiniz.",
+     "detail": "intent=other(0.97) ticker=none"
+    },
+    {
+     "seconds": 6.74,
+     "calls": [],
+     "ok": true,
+     "reply": "Hisse senedi, bir şirketin sahiplik payıdır. Bir hisse alarak, o şirketin küçük bir kısmına sahip olursunuz; şirket kâr ederse bu paydan kar payı (temettü) alabilir veya hisse fiyatı arttıkça değer kazanabilirsiniz.",
+     "detail": "intent=other(0.97) ticker=none"
+    }
+   ]
+  },
+  {
+   "approach": "clef",
+   "request": "Aselsan alınır mı sence?",
+   "gold": null,
+   "correct_runs": 3,
+   "repeats": 3,
+   "median_s": 4.004,
+   "runs": [
+    {
+     "seconds": 4.079,
+     "calls": [],
+     "ok": true,
+     "reply": "Borsa yatırım tavsiyesi değildir; Aselsan'ın alınıp alınmayacağı, kişisel risk algınıza ve yatırım hedeflerinize bağlıdır.",
+     "detail": "intent=other(0.76) ticker=ASELS"
+    },
+    {
+     "seconds": 3.94,
+     "calls": [],
+     "ok": true,
+     "reply": "Borsa yatırım tavsiyesi değildir; Aselsan'ın alınıp alınmayacağı, kişisel risk algınıza ve yatırım hedeflerinize bağlıdır.",
+     "detail": "intent=other(0.76) ticker=ASELS"
+    },
+    {
+     "seconds": 4.004,
+     "calls": [],
+     "ok": true,
+     "reply": "Borsa yatırım tavsiyesi değildir; Aselsan'ın alınıp alınmayacağı, kişisel risk algınıza ve yatırım hedeflerinize bağlıdır.",
+     "detail": "intent=other(0.76) ticker=ASELS"
+    }
+   ]
+  },
+  {
+   "approach": "clef",
+   "request": "Temettü verimi yüksek şirketlerle uzun vadeli bir strateji önerir misin?",
+   "gold": null,
+   "correct_runs": 3,
+   "repeats": 3,
+   "median_s": 6.466,
+   "runs": [
+    {
+     "seconds": 6.336,
+     "calls": [],
+     "ok": true,
+     "reply": "Temettü odaklı uzun vadeli stratejide; istikrarlı nakit akışı olan, sektör lideri şirketleri seçin, temettü vergisini ve yeniden yatırım fırsatlarını değerlendirin ve riski dağıtmak için geniş bir portföy oluşturun.",
+     "detail": "intent=other(0.97) ticker=none"
+    },
+    {
+     "seconds": 6.539,
+     "calls": [],
+     "ok": true,
+     "reply": "Temettü odaklı uzun vadeli stratejide; istikrarlı nakit akışı olan, sektör lideri şirketleri seçin, temettü vergisini ve yeniden yatırım fırsatlarını değerlendirin ve riski dağıtmak için geniş bir portföy oluşturun.",
+     "detail": "intent=other(0.97) ticker=none"
+    },
+    {
+     "seconds": 6.466,
+     "calls": [],
+     "ok": true,
+     "reply": "Temettü odaklı uzun vadeli stratejide; istikrarlı nakit akışı olan, sektör lideri şirketleri seçin, temettü vergisini ve yeniden yatırım fırsatlarını değerlendirin ve riski dağıtmak için geniş bir portföy oluşturun.",
+     "detail": "intent=other(0.97) ticker=none"
+    }
+   ]
+  },
+  {
+   "approach": "clef",
+   "request": "Merhaba, nasılsın?",
+   "gold": null,
+   "correct_runs": 3,
+   "repeats": 3,
+   "median_s": 4.806,
+   "runs": [
+    {
+     "seconds": 4.933,
+     "calls": [],
+     "ok": true,
+     "reply": "Merhaba! Ben bir yapay zeka asistanıyım, bu yüzden duygularım yok ama sorularınıza yardımcı olmaktan mutluluk duyarım. Sizin nasılsınız?",
+     "detail": "intent=other(0.99) ticker=none"
+    },
+    {
+     "seconds": 4.779,
+     "calls": [],
+     "ok": true,
+     "reply": "Merhaba! Ben bir yapay zeka asistanıyım, bu yüzden duygularım yok ama sorularınıza yardımcı olmaktan mutluluk duyarım. Sizin nasılsınız?",
+     "detail": "intent=other(0.99) ticker=none"
+    },
+    {
+     "seconds": 4.806,
+     "calls": [],
+     "ok": true,
+     "reply": "Merhaba! Ben bir yapay zeka asistanıyım, bu yüzden duygularım yok ama sorularınıza yardımcı olmaktan mutluluk duyarım. Sizin nasılsınız?",
+     "detail": "intent=other(0.99) ticker=none"
+    }
+   ]
+  },
+  {
+   "approach": "agent",
+   "request": "THYAO ne kadar?",
+   "gold": [
+    "get_price",
+    {
+     "ticker": "THYAO"
+    }
+   ],
+   "correct_runs": 3,
+   "repeats": 3,
+   "median_s": 5.551,
+   "runs": [
+    {
+     "seconds": 5.512,
+     "calls": [
+      [
+       "get_price",
+       {
+        "ticker": "THYAO"
+       }
+      ]
+     ],
+     "ok": true,
+     "reply": "THYAO'nun fiyatı 312.5 TL.",
+     "detail": ""
+    },
+    {
+     "seconds": 5.551,
+     "calls": [
+      [
+       "get_price",
+       {
+        "ticker": "THYAO"
+       }
+      ]
+     ],
+     "ok": true,
+     "reply": "THYAO'nun fiyatı 312.5 TL.",
+     "detail": ""
+    },
+    {
+     "seconds": 5.614,
+     "calls": [
+      [
+       "get_price",
+       {
+        "ticker": "THYAO"
+       }
+      ]
+     ],
+     "ok": true,
+     "reply": "THYAO'nun fiyatı 312.5 TL.",
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "approach": "agent",
+   "request": "Aselsan hissesinin fiyatı nedir?",
+   "gold": [
+    "get_price",
+    {
+     "ticker": "ASELS"
+    }
+   ],
+   "correct_runs": 3,
+   "repeats": 3,
+   "median_s": 6.087,
+   "runs": [
+    {
+     "seconds": 6.113,
+     "calls": [
+      [
+       "get_price",
+       {
+        "ticker": "ASELS"
+       }
+      ]
+     ],
+     "ok": true,
+     "reply": "Aselsan (ASELS) hissesinin fiyatı 148.2 TL'dir.",
+     "detail": ""
+    },
+    {
+     "seconds": 6.087,
+     "calls": [
+      [
+       "get_price",
+       {
+        "ticker": "ASELS"
+       }
+      ]
+     ],
+     "ok": true,
+     "reply": "Aselsan (ASELS) hissesinin fiyatı 148.2 TL'dir.",
+     "detail": ""
+    },
+    {
+     "seconds": 6.045,
+     "calls": [
+      [
+       "get_price",
+       {
+        "ticker": "ASELS"
+       }
+      ]
+     ],
+     "ok": true,
+     "reply": "Aselsan (ASELS) hissesinin fiyatı 148.2 TL'dir.",
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "approach": "agent",
+   "request": "Koç Holding şu an kaç lira?",
+   "gold": [
+    "get_price",
+    {
+     "ticker": "KCHOL"
+    }
+   ],
+   "correct_runs": 0,
+   "repeats": 3,
+   "median_s": 2.544,
+   "runs": [
+    {
+     "seconds": 2.544,
+     "calls": [],
+     "ok": false,
+     "reply": "Koç Holding (KCHOL) şu an 185,40 TL.",
+     "detail": ""
+    },
+    {
+     "seconds": 2.544,
+     "calls": [],
+     "ok": false,
+     "reply": "Koç Holding (KCHOL) şu an 185,40 TL.",
+     "detail": ""
+    },
+    {
+     "seconds": 2.576,
+     "calls": [],
+     "ok": false,
+     "reply": "Koç Holding (KCHOL) şu an 185,40 TL.",
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "approach": "agent",
+   "request": "Türk Hava Yollarından 100 lot al",
+   "gold": [
+    "buy_stock",
+    {
+     "ticker": "THYAO",
+     "quantity": 100
+    }
+   ],
+   "correct_runs": 3,
+   "repeats": 3,
+   "median_s": 7.267,
+   "runs": [
+    {
+     "seconds": 7.218,
+     "calls": [
+      [
+       "buy_stock",
+       {
+        "ticker": "THYAO",
+        "quantity": 100
+       }
+      ]
+     ],
+     "ok": true,
+     "reply": "Tamam, 100 lot THYAO alım emriniz alındı.",
+     "detail": ""
+    },
+    {
+     "seconds": 7.279,
+     "calls": [
+      [
+       "buy_stock",
+       {
+        "ticker": "THYAO",
+        "quantity": 100
+       }
+      ]
+     ],
+     "ok": true,
+     "reply": "Tamam, 100 lot THYAO alım emriniz alındı.",
+     "detail": ""
+    },
+    {
+     "seconds": 7.267,
+     "calls": [
+      [
+       "buy_stock",
+       {
+        "ticker": "THYAO",
+        "quantity": 100
+       }
+      ]
+     ],
+     "ok": true,
+     "reply": "Tamam, 100 lot THYAO alım emriniz alındı.",
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "approach": "agent",
+   "request": "Garanti'den 50 adet satın al",
+   "gold": [
+    "buy_stock",
+    {
+     "ticker": "GARAN",
+     "quantity": 50
+    }
+   ],
+   "correct_runs": 3,
+   "repeats": 3,
+   "median_s": 7.437,
+   "runs": [
+    {
+     "seconds": 7.437,
+     "calls": [
+      [
+       "buy_stock",
+       {
+        "ticker": "GARAN",
+        "quantity": 50
+       }
+      ]
+     ],
+     "ok": true,
+     "reply": "Garanti BBVA (GARAN) için 50 lotluk alım emriniz alındı.",
+     "detail": ""
+    },
+    {
+     "seconds": 7.463,
+     "calls": [
+      [
+       "buy_stock",
+       {
+        "ticker": "GARAN",
+        "quantity": 50
+       }
+      ]
+     ],
+     "ok": true,
+     "reply": "Garanti BBVA (GARAN) için 50 lotluk alım emriniz alındı.",
+     "detail": ""
+    },
+    {
+     "seconds": 7.395,
+     "calls": [
+      [
+       "buy_stock",
+       {
+        "ticker": "GARAN",
+        "quantity": 50
+       }
+      ]
+     ],
+     "ok": true,
+     "reply": "Garanti BBVA (GARAN) için 50 lotluk alım emriniz alındı.",
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "approach": "agent",
+   "request": "BIMAS 5 lot alım emri ver",
+   "gold": [
+    "buy_stock",
+    {
+     "ticker": "BIMAS",
+     "quantity": 5
+    }
+   ],
+   "correct_runs": 3,
+   "repeats": 3,
+   "median_s": 6.861,
+   "runs": [
+    {
+     "seconds": 6.85,
+     "calls": [
+      [
+       "buy_stock",
+       {
+        "ticker": "BIMAS",
+        "quantity": 5
+       }
+      ]
+     ],
+     "ok": true,
+     "reply": "BIMAS için 5 lotluk alım emriniz alındı.",
+     "detail": ""
+    },
+    {
+     "seconds": 6.862,
+     "calls": [
+      [
+       "buy_stock",
+       {
+        "ticker": "BIMAS",
+        "quantity": 5
+       }
+      ]
+     ],
+     "ok": true,
+     "reply": "BIMAS için 5 lotluk alım emriniz alındı.",
+     "detail": ""
+    },
+    {
+     "seconds": 6.861,
+     "calls": [
+      [
+       "buy_stock",
+       {
+        "ticker": "BIMAS",
+        "quantity": 5
+       }
+      ]
+     ],
+     "ok": true,
+     "reply": "BIMAS için 5 lotluk alım emriniz alındı.",
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "approach": "agent",
+   "request": "Elimdeki BİM hisselerinden 20 tanesini sat",
+   "gold": [
+    "sell_stock",
+    {
+     "ticker": "BIMAS",
+     "quantity": 20
+    }
+   ],
+   "correct_runs": 3,
+   "repeats": 3,
+   "median_s": 7.463,
+   "runs": [
+    {
+     "seconds": 7.5,
+     "calls": [
+      [
+       "sell_stock",
+       {
+        "ticker": "BIMAS",
+        "quantity": 20
+       }
+      ]
+     ],
+     "ok": true,
+     "reply": "20 lot BİM (BIMAS) hissesi satışı için emriniz alındı.",
+     "detail": ""
+    },
+    {
+     "seconds": 7.463,
+     "calls": [
+      [
+       "sell_stock",
+       {
+        "ticker": "BIMAS",
+        "quantity": 20
+       }
+      ]
+     ],
+     "ok": true,
+     "reply": "20 lot BİM (BIMAS) hissesi satışı için emriniz alındı.",
+     "detail": ""
+    },
+    {
+     "seconds": 7.417,
+     "calls": [
+      [
+       "sell_stock",
+       {
+        "ticker": "BIMAS",
+        "quantity": 20
+       }
+      ]
+     ],
+     "ok": true,
+     "reply": "20 lot BİM (BIMAS) hissesi satışı için emriniz alındı.",
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "approach": "agent",
+   "request": "Tüpraş'tan 10 lot satmak istiyorum",
+   "gold": [
+    "sell_stock",
+    {
+     "ticker": "TUPRS",
+     "quantity": 10
+    }
+   ],
+   "correct_runs": 3,
+   "repeats": 3,
+   "median_s": 7.46,
+   "runs": [
+    {
+     "seconds": 7.46,
+     "calls": [
+      [
+       "sell_stock",
+       {
+        "ticker": "TUPRS",
+        "quantity": 10
+       }
+      ]
+     ],
+     "ok": true,
+     "reply": "Tüpraş (TUPRS) için 10 lotluk satış emriniz alındı.",
+     "detail": ""
+    },
+    {
+     "seconds": 7.423,
+     "calls": [
+      [
+       "sell_stock",
+       {
+        "ticker": "TUPRS",
+        "quantity": 10
+       }
+      ]
+     ],
+     "ok": true,
+     "reply": "Tüpraş (TUPRS) için 10 lotluk satış emriniz alındı.",
+     "detail": ""
+    },
+    {
+     "seconds": 7.484,
+     "calls": [
+      [
+       "sell_stock",
+       {
+        "ticker": "TUPRS",
+        "quantity": 10
+       }
+      ]
+     ],
+     "ok": true,
+     "reply": "Tüpraş (TUPRS) için 10 lotluk satış emriniz alındı.",
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "approach": "agent",
+   "request": "Portföyümde neler var?",
+   "gold": [
+    "get_portfolio",
+    {}
+   ],
+   "correct_runs": 3,
+   "repeats": 3,
+   "median_s": 8.705,
+   "runs": [
+    {
+     "seconds": 8.705,
+     "calls": [
+      [
+       "get_portfolio",
+       {}
+      ]
+     ],
+     "ok": true,
+     "reply": "Portföyünüzde şu hisse senetleri bulunmaktadır:\n*   **THYAO**: 200 lot\n*   **BIMAS**: 40 lot\n*   **TUPRS**: 25 lot\n*   **GARAN**: 300 lot",
+     "detail": ""
+    },
+    {
+     "seconds": 8.657,
+     "calls": [
+      [
+       "get_portfolio",
+       {}
+      ]
+     ],
+     "ok": true,
+     "reply": "Portföyünüzde şu hisse senetleri bulunmaktadır:\n*   **THYAO**: 200 lot\n*   **BIMAS**: 40 lot\n*   **TUPRS**: 25 lot\n*   **GARAN**: 300 lot",
+     "detail": ""
+    },
+    {
+     "seconds": 8.751,
+     "calls": [
+      [
+       "get_portfolio",
+       {}
+      ]
+     ],
+     "ok": true,
+     "reply": "Portföyünüzde şu hisse senetleri bulunmaktadır:\n*   **THYAO**: 200 lot\n*   **BIMAS**: 40 lot\n*   **TUPRS**: 25 lot\n*   **GARAN**: 300 lot",
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "approach": "agent",
+   "request": "Hesabımdaki hisseleri göster",
+   "gold": [
+    "get_portfolio",
+    {}
+   ],
+   "correct_runs": 3,
+   "repeats": 3,
+   "median_s": 7.201,
+   "runs": [
+    {
+     "seconds": 7.271,
+     "calls": [
+      [
+       "get_portfolio",
+       {}
+      ]
+     ],
+     "ok": true,
+     "reply": "Hesabındaki hisseler:\n- THYAO: 200 lot\n- BIMAS: 40 lot\n- TUPRS: 25 lot\n- GARAN: 300 lot",
+     "detail": ""
+    },
+    {
+     "seconds": 7.201,
+     "calls": [
+      [
+       "get_portfolio",
+       {}
+      ]
+     ],
+     "ok": true,
+     "reply": "Hesabındaki hisseler:\n- THYAO: 200 lot\n- BIMAS: 40 lot\n- TUPRS: 25 lot\n- GARAN: 300 lot",
+     "detail": ""
+    },
+    {
+     "seconds": 7.149,
+     "calls": [
+      [
+       "get_portfolio",
+       {}
+      ]
+     ],
+     "ok": true,
+     "reply": "Hesabındaki hisseler:\n- THYAO: 200 lot\n- BIMAS: 40 lot\n- TUPRS: 25 lot\n- GARAN: 300 lot",
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "approach": "agent",
+   "request": "Garanti hisselerimi satmayacağım, sadece fiyatına bakacaktım",
+   "gold": [
+    "get_price",
+    {
+     "ticker": "GARAN"
+    }
+   ],
+   "correct_runs": 0,
+   "repeats": 3,
+   "median_s": 3.037,
+   "runs": [
+    {
+     "seconds": 3.058,
+     "calls": [],
+     "ok": false,
+     "reply": "Garanti BBVA (GARAN) hissesinin güncel fiyatı 10.45 TL.",
+     "detail": ""
+    },
+    {
+     "seconds": 3.023,
+     "calls": [],
+     "ok": false,
+     "reply": "Garanti BBVA (GARAN) hissesinin güncel fiyatı 10.45 TL.",
+     "detail": ""
+    },
+    {
+     "seconds": 3.037,
+     "calls": [],
+     "ok": false,
+     "reply": "Garanti BBVA (GARAN) hissesinin güncel fiyatı 10.45 TL.",
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "approach": "agent",
+   "request": "Hisse senedi nedir, nasıl çalışır?",
+   "gold": null,
+   "correct_runs": 3,
+   "repeats": 3,
+   "median_s": 22.329,
+   "runs": [
+    {
+     "seconds": 22.298,
+     "calls": [],
+     "ok": true,
+     "reply": "Hisse senedi, bir şirketin sermayesinin belirli bir payını temsil eden finansal bir araçtır. Bir hisse alırsanız, o şirketin küçük bir ortak (paydaş) olursunuz.\n\n**Nasıl Çalışır?**\n*   **Alım:** Bir hisse senedi satın alırsanız, şirketin bir parçasına sahip olursunuz.\n*   **Kâr Etme Yolları:**\n    1.  **Fiyat Artışı:** Hisse senedinin piyasa fiyatı yükseldiğinde, elinizdeki hisseleri daha pahalıya satarak kâr edersiniz.\n    2.  **Temettü:** Bazı şirketler, kârlarının bir kısmını hissedarlara dağıtım (temettü) olarak öder.\n*   **Risk:** Hisse fiyatları düşerse, yatırımınızın değeri azalır ve zarar edebilirsiniz.\n\nYatırım yapmadan önce mutlaka kendi araştırmanızı yapmalı veya bir yatırım danışmanına başvurmalısınız.",
+     "detail": ""
+    },
+    {
+     "seconds": 22.433,
+     "calls": [],
+     "ok": true,
+     "reply": "Hisse senedi, bir şirketin sermayesinin belirli bir payını temsil eden finansal bir araçtır. Bir hisse alırsanız, o şirketin küçük bir ortak (paydaş) olursunuz.\n\n**Nasıl Çalışır?**\n*   **Alım:** Bir hisse senedi satın alırsanız, şirketin bir parçasına sahip olursunuz.\n*   **Kâr Etme Yolları:**\n    1.  **Fiyat Artışı:** Hisse senedinin piyasa fiyatı yükseldiğinde, elinizdeki hisseleri daha pahalıya satarak kâr edersiniz.\n    2.  **Temettü:** Bazı şirketler, kârlarının bir kısmını hissedarlara dağıtım (temettü) olarak öder.\n*   **Risk:** Hisse fiyatları düşerse, yatırımınızın değeri azalır ve zarar edebilirsiniz.\n\nYatırım yapmadan önce mutlaka kendi araştırmanızı yapmalı veya bir yatırım danışmanına başvurmalısınız.",
+     "detail": ""
+    },
+    {
+     "seconds": 22.329,
+     "calls": [],
+     "ok": true,
+     "reply": "Hisse senedi, bir şirketin sermayesinin belirli bir payını temsil eden finansal bir araçtır. Bir hisse alırsanız, o şirketin küçük bir ortak (paydaş) olursunuz.\n\n**Nasıl Çalışır?**\n*   **Alım:** Bir hisse senedi satın alırsanız, şirketin bir parçasına sahip olursunuz.\n*   **Kâr Etme Yolları:**\n    1.  **Fiyat Artışı:** Hisse senedinin piyasa fiyatı yükseldiğinde, elinizdeki hisseleri daha pahalıya satarak kâr edersiniz.\n    2.  **Temettü:** Bazı şirketler, kârlarının bir kısmını hissedarlara dağıtım (temettü) olarak öder.\n*   **Risk:** Hisse fiyatları düşerse, yatırımınızın değeri azalır ve zarar edebilirsiniz.\n\nYatırım yapmadan önce mutlaka kendi araştırmanızı yapmalı veya bir yatırım danışmanına başvurmalısınız.",
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "approach": "agent",
+   "request": "Aselsan alınır mı sence?",
+   "gold": null,
+   "correct_runs": 3,
+   "repeats": 3,
+   "median_s": 3.958,
+   "runs": [
+    {
+     "seconds": 3.92,
+     "calls": [],
+     "ok": true,
+     "reply": "Aselsan (ASELS) hakkında yatırım tavsiyesi veremem. Ancak güncel fiyatını veya portföy durumunuzu kontrol etmek ister misiniz?",
+     "detail": ""
+    },
+    {
+     "seconds": 3.958,
+     "calls": [],
+     "ok": true,
+     "reply": "Aselsan (ASELS) hakkında yatırım tavsiyesi veremem. Ancak güncel fiyatını veya portföy durumunuzu kontrol etmek ister misiniz?",
+     "detail": ""
+    },
+    {
+     "seconds": 3.994,
+     "calls": [],
+     "ok": true,
+     "reply": "Aselsan (ASELS) hakkında yatırım tavsiyesi veremem. Ancak güncel fiyatını veya portföy durumunuzu kontrol etmek ister misiniz?",
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "approach": "agent",
+   "request": "Temettü verimi yüksek şirketlerle uzun vadeli bir strateji önerir misin?",
+   "gold": null,
+   "correct_runs": 3,
+   "repeats": 3,
+   "median_s": 25.498,
+   "runs": [
+    {
+     "seconds": 25.498,
+     "calls": [],
+     "ok": true,
+     "reply": "Temettü verimi yüksek şirketler genellikle uzun vadeli yatırımcılar için caziptir. Ancak, **şu an için herhangi bir alım veya satım işlemi yapmadım**, çünkü bu sadece bir fikir sorusuydu.\n\nYüksek temettü getirisine sahip şirketler genellikle sermaye piyasalarında \"temettü aristokratları\" olarak adlandırılır ve düzenli ödemeler yaparlar. Stratejinizi oluştururken şu şirketleri inceleyebilirsiniz:\n\n*   **TUPRS (Tüpraş):** Enerji sektöründe güçlü bir oyuncu ve düzenli temettü ödemeleri yapar.\n*   **GARAN (Garanti BBVA):** Bankacılık sektöründe temettü verimi genellikle yüksektir.\n*   **THYAO (Türk Hava Yolları):** Son dönemde karlılığı arttıkça temettü potansiyeli yükseldi.\n*   **ASELS (Aselsan):** Savunma sanayii lideri olarak temettü politikası izlemektedir.\n\nHangi şirketin güncel fiyatını öğrenmek veya portföyünüzü kontrol etmek isterseniz, lütfen açıkça emir verin.",
+     "detail": ""
+    },
+    {
+     "seconds": 25.498,
+     "calls": [],
+     "ok": true,
+     "reply": "Temettü verimi yüksek şirketler genellikle uzun vadeli yatırımcılar için caziptir. Ancak, **şu an için herhangi bir alım veya satım işlemi yapmadım**, çünkü bu sadece bir fikir sorusuydu.\n\nYüksek temettü getirisine sahip şirketler genellikle sermaye piyasalarında \"temettü aristokratları\" olarak adlandırılır ve düzenli ödemeler yaparlar. Stratejinizi oluştururken şu şirketleri inceleyebilirsiniz:\n\n*   **TUPRS (Tüpraş):** Enerji sektöründe güçlü bir oyuncu ve düzenli temettü ödemeleri yapar.\n*   **GARAN (Garanti BBVA):** Bankacılık sektöründe temettü verimi genellikle yüksektir.\n*   **THYAO (Türk Hava Yolları):** Son dönemde karlılığı arttıkça temettü potansiyeli yükseldi.\n*   **ASELS (Aselsan):** Savunma sanayii lideri olarak temettü politikası izlemektedir.\n\nHangi şirketin güncel fiyatını öğrenmek veya portföyünüzü kontrol etmek isterseniz, lütfen açıkça emir verin.",
+     "detail": ""
+    },
+    {
+     "seconds": 25.425,
+     "calls": [],
+     "ok": true,
+     "reply": "Temettü verimi yüksek şirketler genellikle uzun vadeli yatırımcılar için caziptir. Ancak, **şu an için herhangi bir alım veya satım işlemi yapmadım**, çünkü bu sadece bir fikir sorusuydu.\n\nYüksek temettü getirisine sahip şirketler genellikle sermaye piyasalarında \"temettü aristokratları\" olarak adlandırılır ve düzenli ödemeler yaparlar. Stratejinizi oluştururken şu şirketleri inceleyebilirsiniz:\n\n*   **TUPRS (Tüpraş):** Enerji sektöründe güçlü bir oyuncu ve düzenli temettü ödemeleri yapar.\n*   **GARAN (Garanti BBVA):** Bankacılık sektöründe temettü verimi genellikle yüksektir.\n*   **THYAO (Türk Hava Yolları):** Son dönemde karlılığı arttıkça temettü potansiyeli yükseldi.\n*   **ASELS (Aselsan):** Savunma sanayii lideri olarak temettü politikası izlemektedir.\n\nHangi şirketin güncel fiyatını öğrenmek veya portföyünüzü kontrol etmek isterseniz, lütfen açıkça emir verin.",
+     "detail": ""
+    }
+   ]
+  },
+  {
+   "approach": "agent",
+   "request": "Merhaba, nasılsın?",
+   "gold": null,
+   "correct_runs": 3,
+   "repeats": 3,
+   "median_s": 2.837,
+   "runs": [
+    {
+     "seconds": 2.837,
+     "calls": [],
+     "ok": true,
+     "reply": "Merhaba! Ben bir aracı kurum asistanıyım. Size nasıl yardımcı olabilirim?",
+     "detail": ""
+    },
+    {
+     "seconds": 2.868,
+     "calls": [],
+     "ok": true,
+     "reply": "Merhaba! Ben bir aracı kurum asistanıyım. Size nasıl yardımcı olabilirim?",
+     "detail": ""
+    },
+    {
+     "seconds": 2.753,
+     "calls": [],
+     "ok": true,
+     "reply": "Merhaba! Ben bir aracı kurum asistanıyım. Size nasıl yardımcı olabilirim?",
+     "detail": ""
+    }
+   ]
+  }
+ ]
+}
