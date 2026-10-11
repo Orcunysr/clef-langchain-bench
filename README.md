@@ -50,7 +50,7 @@ graph TD
     classify -.->|sell| sell["sell<br/>sell_stock()"]
     classify -.->|portfolio| portfolio["portfolio<br/>get_portfolio()"]
     classify -.->|missing ticker / quantity| ask["ask_missing"]
-    classify -.->|other, or p &lt; 0.6| llm["llm_fallback<br/>Qwen3.5-9B"]
+    classify -.->|other, or p below 0.6| llm["llm_fallback<br/>Qwen3.5-9B"]
     price --> finish([end])
     buy --> finish
     sell --> finish
