@@ -7,6 +7,22 @@
   <img alt="Bar charts. Tool requests, median latency: clef-routed graph 0.27 s, tool-calling agent 7.20 s. Open-ended requests: 5.64 s vs 13.14 s. Correct runs out of 45: 45 vs 39." src="docs/results_light.png">
 </picture>
 
+## Why this exists
+
+I'm a third-year student, and the agentic business workflows I'm working on were capable but slow. So for the common paths I kept falling back to scripts with keyword rules, which were fast but brittle: the Turkish word for "stock" shows up both in *"buy 100 lots of THY"* and in *"what is a stock?"*.
+
+When Cloudflare released the Clef decision models and LangChain wrote about using Jev in agent harnesses, I wanted to check, on hardware I actually have, whether a decision model could sit in between: deterministic code for the requests I already know how to handle, an agent for everything else. This repo is what I found. It is a learning project, not a product claim. If something here is wrong or unfair to one of the approaches, please open an issue; corrections are very welcome.
+
+This is an independent project. I'm not affiliated with Cloudflare, LangChain or TypeSafe.
+
+**Where this pattern might help** (ideas I haven't benchmarked yet):
+
+- **Ticket and email triage:** department, urgency and phishing as one typed question set, in one call.
+- **Choosing the tool or sub-agent** before an LLM is ever called, and escalating to the LLM only when confidence is low.
+- **Guardrails before tool execution:** `AutoModeMiddleware` from `langchain-typesafe` worked unchanged against the local server.
+- **Log and alert triage:** severity and component on every line, cheap enough to run on a stream.
+- **Document intake with images**, such as "is this receipt legible, which type, does it need approval?" (clef-flash accepts images).
+
 Agentic workflows are flexible but slow, so many teams fall back to hand-written scripts with keyword rules. Those rules are brittle: "hisse" (stock) appears in both *"buy 100 lots of THY"* and *"what is a stock?"*. This repo measures a middle path:
 
 - **[Cloudflare/clef-flash](https://huggingface.co/Cloudflare/clef-flash)** (9B decision model) reads the request and returns calibrated probabilities for typed questions (intent, ticker) in a single forward pass. It generates no text.
